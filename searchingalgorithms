@@ -1,0 +1,48 @@
+li= [1,5,3,8,6,9]
+
+number = int(input("what number are you seeking?"))
+
+if number in li:
+    print("the number is present")
+else:
+    print("the number isn't present")
+
+present=False
+for i in li: #linearsearch
+    if i==number:
+        print("the number is present")
+        present=True
+        break
+if present==False:
+    print("the number isn't present")
+
+
+
+#binarysearch
+#condition your data should be sorted
+
+li=[1,2,3,4,5,6,7,8,9,10]
+
+low=0
+high=9
+present=False
+while low<=high:
+    mid=(low+high)//2
+    if li[mid]==number:
+        print("the number is present")
+        present=True
+        break
+    elif li[mid]<number:
+        low=mid+1
+    elif li[mid]>number:
+        high=mid-1
+if present==False:
+    print("the number isn't present")
+
+    
+
+
+        
+
+
+
