@@ -1,0 +1,34 @@
+li = [11,32,54,22,96,41,86,63] 
+#selection sort
+
+for i in range(0,len(li)):
+    small=li[i]
+    index=i
+    for j in range(i+1,len(li)):
+        if li[j]<small:
+            small=li[j]
+            index=j
+    temp=li[i]
+    li[i]=small
+    li[index]=temp
+print(li)
+
+#bubble sort
+
+li=[93,38,15,58,39]
+for i in range(0,len(li)):
+    for j in range(0,len(li)-i-1):
+        pass
+    pass
+
+
+    
+
+
+
+    
+
+
+
+
+
